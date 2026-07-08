@@ -17,7 +17,13 @@
       background: #004080;
       color: #fff;
       padding: 20px;
-      text-align: center;
+      display: flex;              /* Align logo and text side by side */
+      align-items: center;        /* Vertically center them */
+      justify-content: center;    /* Center the whole block */
+    }
+    header img {
+      height: 60px;               /* Adjust logo size */
+      margin-right: 15px;         /* Space between logo and text */
     }
     header h1 {
       margin: 0;
@@ -42,6 +48,8 @@
 </head>
 <body>
   <header>
+    <!-- Company logo placed before the name -->
+    <img src="main/Company Log.png" alt="Win Securities Limited Logo">
     <h1>Win Securities Limited 贏證券有限公司</h1>
   </header>
 
@@ -55,6 +63,11 @@
     </p>
     <p>
       贏證券有限公司，是香港證監會認可的持牌法團（中央編號：AGV213），擁有第1號及第7號牌照，並作為香港交易所參與者。
+    </p>
+    <p>
+      <strong>公司地址：</strong> 香港灣仔道30號新鴻基中心25樓2537-2539室<br>
+      <strong>公司電話：</strong> (852)22627228<br>
+      <strong>傳真：</strong> (852)23509993
     </p>
   </main>
 
