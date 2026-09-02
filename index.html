@@ -4,49 +4,80 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Win Securities Limited 贏證券有限公司</title>
-  <link rel="stylesheet" href="style.css"> <!-- optional external CSS -->
   <style>
     body {
       font-family: Arial, sans-serif;
       margin: 0;
-      background: url("image/Web Page Background.png") no-repeat center center fixed;
+      padding: 0;
+      background-image: url('image/Web Page Background.png');
       background-size: cover;
-      color: #333;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-attachment: fixed;
+      color: #003366;
     }
     header {
       text-align: center;
-      padding: 2rem;
-      background: rgba(0, 64, 128, 0.8); /* semi-transparent overlay */
-      color: white;
+      padding: 40px 20px;
+      background-color: rgba(255, 255, 255, 0.8);
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
     }
     nav {
       text-align: center;
-      background: rgba(255, 255, 255, 0.8);
-      padding: 1rem;
+      background-color: rgba(255, 255, 255, 0.9);
+      padding: 10px;
     }
     nav a {
-      margin: 0 1rem;
+      margin: 0 15px;
       text-decoration: none;
-      color: #004080;
+      color: #003366;
       font-weight: bold;
     }
     nav a:hover {
       text-decoration: underline;
     }
     main {
-      padding: 2rem;
       text-align: center;
-      background: rgba(255, 255, 255, 0.7);
-      margin: 2rem auto;
-      max-width: 800px;
+      padding: 60px 20px;
+      background-color: rgba(255, 255, 255, 0.85);
+      margin: 40px auto;
+      max-width: 900px;
       border-radius: 8px;
+    }
+    .container {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      margin-top: 40px;
+    }
+    .oval-box {
+      width: 200px;
+      height: 80px;
+      background-color: #add8e6; /* light blue */
+      border-radius: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 18px;
+      font-weight: bold;
+      color: #003366;
+      text-decoration: none;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+      transition: transform 0.2s, background-color 0.2s;
+    }
+    .oval-box:hover {
+      transform: scale(1.05);
+      background-color: #bfefff; /* lighter blue on hover */
     }
     footer {
       text-align: center;
-      padding: 1rem;
-      background: rgba(0, 64, 128, 0.8);
-      color: white;
-      margin-top: 2rem;
+      padding: 20px;
+      background-color: rgba(255, 255, 255, 0.8);
+      margin-top: 40px;
+      font-size: 0.9rem;
     }
   </style>
 </head>
@@ -59,18 +90,20 @@
   <nav>
     <a href="index.html">首頁</a>
     <a href="about.html">關於我們</a>
-    <a href="services.html">服務</a>
-    <a href="news.html">最新消息</a>
+    <a href="services.html">客戶服務</a>
+    <a href="download.html">表格下載</a>
     <a href="contact.html">聯絡我們</a>
   </nav>
 
   <main>
-    <h2>歡迎來到 Win Securities</h2>
-    <p>我們致力於提供專業的金融服務，為客戶創造雙贏的未來。</p>
+    <h2>選擇服務</h2>
+    <div class="container">
+      <a href="trade.html" class="oval-box">網上交易</a>
+      <a href="download-app.html" class="oval-box">手機程式下載</a>
+    </div>
   </main>
 
   <footer>
-    <p>&copy; 2026 贏證券有限公司 | 聯絡電話: (852)22627228 | 傳真： (852)23509993</p>
+    <p>&copy; 2026 贏證券有限公司 | 聯絡電話: (852)22627228</p>
   </footer>
 </body>
-</html>
